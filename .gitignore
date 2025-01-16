@@ -1,0 +1,49 @@
+# Ignore compiled class files
+*.class
+
+# Ignore package files
+*.jar
+*.war
+*.ear
+
+# Ignore logs
+*.log
+logs/
+*.pid
+hs_err_pid*
+
+# Ignore IDE settings
+.idea/
+.vscode/
+*.iml
+*.swp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore build files
+target/
+bin/
+build/
+
+# Ignore dependencies
+node_modules/
+vendor/
+.mvn/
+*.lock
+
+# Ignore environment variables
+.env
+.env.local
+
+# Ignore Maven-specific files
+pom.xml.tag
+pom.xml.releaseBackup
+dependency-reduced-pom.xml
+buildNumber.properties
+target/
+
+# Ignore Vaadin build cache
+frontend/generated/
+vaadin/
