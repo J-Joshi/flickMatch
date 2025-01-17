@@ -21,12 +21,12 @@ public class MainView extends VerticalLayout {
     private Span team1Label = new Span("Team 1");
     private Span team2Label = new Span("Team 2");
 
-    private Span goalsLabel = new Span("Goals:");
-    private Span possessionLabel = new Span("Possession:");
-    private Span passesLabel = new Span("Total Passes:");
-    private Span shotsLabel = new Span("Shots:");
-    private Span shotsOnTargetLabel = new Span("Shots on Target:");
-    private Span cornersLabel = new Span("Corners:");
+    // private Span goalsLabel = new Span("Goals:");
+    // private Span possessionLabel = new Span("Possession:");
+    // private Span passesLabel = new Span("Total Passes:");
+    // private Span shotsLabel = new Span("Shots:");
+    // private Span shotsOnTargetLabel = new Span("Shots on Target:");
+    // private Span cornersLabel = new Span("Corners:");
 
     private Span team1Goals = new Span();
     private Span team2Goals = new Span();
