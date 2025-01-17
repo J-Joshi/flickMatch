@@ -1,7 +1,7 @@
 package org.vaadin.example;
 
 import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.html.Label;
+import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -17,29 +17,29 @@ public class MainView extends VerticalLayout {
     private TextField matchIdField = new TextField("Enter Match ID(Enter 1 to get the data shown in Assignment)");
     private Button fetchButton = new Button("Fetch Match Stats");
 
-    private Label dateLabel = new Label("Date: ");
-    private Label team1Label = new Label("Team 1");
-    private Label team2Label = new Label("Team 2");
+    private Span dateLabel = new Span("Date: ");
+    private Span team1Label = new Span("Team 1");
+    private Span team2Label = new Span("Team 2");
 
-    private Label goalsLabel = new Label("Goals:");
-    private Label possessionLabel = new Label("Possession:");
-    private Label passesLabel = new Label("Total Passes:");
-    private Label shotsLabel = new Label("Shots:");
-    private Label shotsOnTargetLabel = new Label("Shots on Target:");
-    private Label cornersLabel = new Label("Corners:");
+    private Span goalsLabel = new Span("Goals:");
+    private Span possessionLabel = new Span("Possession:");
+    private Span passesLabel = new Span("Total Passes:");
+    private Span shotsLabel = new Span("Shots:");
+    private Span shotsOnTargetLabel = new Span("Shots on Target:");
+    private Span cornersLabel = new Span("Corners:");
 
-    private Label team1Goals = new Label();
-    private Label team2Goals = new Label();
-    private Label team1Possession = new Label();
-    private Label team2Possession = new Label();
-    private Label team1Passes = new Label();
-    private Label team2Passes = new Label();
-    private Label team1Shots = new Label();
-    private Label team2Shots = new Label();
-    private Label team1ShotsOnTarget = new Label();
-    private Label team2ShotsOnTarget = new Label();
-    private Label team1Corners = new Label();
-    private Label team2Corners = new Label();
+    private Span team1Goals = new Span();
+    private Span team2Goals = new Span();
+    private Span team1Possession = new Span();
+    private Span team2Possession = new Span();
+    private Span team1Passes = new Span();
+    private Span team2Passes = new Span();
+    private Span team1Shots = new Span();
+    private Span team2Shots = new Span();
+    private Span team1ShotsOnTarget = new Span();
+    private Span team2ShotsOnTarget = new Span();
+    private Span team1Corners = new Span();
+    private Span team2Corners = new Span();
 
     public MainView() {
         setSpacing(true);
@@ -75,8 +75,8 @@ public class MainView extends VerticalLayout {
         add(tableLayout);
     }
 
-    private HorizontalLayout createRow(String statLabel, Label team1Value, Label team2Value, boolean isHeader) {
-        Label label = new Label(statLabel);
+    private HorizontalLayout createRow(String statLabel, Span team1Value, Span team2Value, boolean isHeader) {
+        Span label = new Span(statLabel);
         label.getStyle().set("width", "150px").set("font-weight", isHeader ? "bold" : "normal");
 
         team1Value.getStyle().set("width", "100px");
